@@ -39,7 +39,8 @@
 
 .navegacion{
   display: flex;
-  flex-wrap: flex-start;
+  justify-content: space-between;
+
   background-color: #e6d0f0;
 
 }
