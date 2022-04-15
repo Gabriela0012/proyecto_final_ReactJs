@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.navegacion{
+  display: flex;
+  flex-wrap: flex-start;
+  background-color: #e6d0f0;
+
+}
+
+.img-logo{
+  padding: 10px;
+  height: 100px;
+  width: 150px;
+  border-radius: 50%;
+}

@@ -1,0 +1,26 @@
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: #e6d0f0;
+  color: #9b12b6;
+  font-size: 15px;
+  font-family: 'Ranga', cursive;
+  text-decoration: none;
+}
+
+.nav ul  {
+
+  background-color: #e6d0f0;
+ 
+}
+.nav a {
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Ranga', cursive;
+  text-decoration: none;
+
+}
+
