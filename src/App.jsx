@@ -13,7 +13,7 @@ function App() {
         <NavBar /> 
         <CartWidget />
       </div>
-      <ItemListContainer />
+      <ItemListContainer greeting='SI NO ES UN BUEN DÍA ME LO INVENTO LOVELY'/>
           
       <header className="App-header">
       

@@ -1,13 +1,12 @@
 import React from 'react';
 import './ItemListContainer.css';
 
-function ItemListContainer() {
+
+const ItemListContainer = ({greeting }) => {
   return (
     <div className="sidebar">
-     <h1>SI NO ES UN BUEN DÍA ME LO INVENTO LOVELY</h1>
-  
-
-    </div>
+      {greeting}
+      </div>
   )
 }
 
