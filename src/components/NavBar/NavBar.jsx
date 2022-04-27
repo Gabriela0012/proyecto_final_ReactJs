@@ -5,7 +5,7 @@ import CartWidget from './CartWidget';
 
 function NavBar() {
   return (
-    <div className='navegacion'>
+    <div className='navegacion d-flex justify-content-around align-items-center'>
       <img src={logo} className='img-logo'alt='logo' />
       <div className='contenedor-navbar'>
         <div>

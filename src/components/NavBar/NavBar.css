@@ -1,3 +1,14 @@
+.navegacion{
+
+  background-color: #e6d0f0;
+
+}
+.img-logo{
+  height: 100px;
+  width: 150px;
+  border-radius: 50%;
+ 
+}
 .nav {
   list-style-type: none;
   margin: 0;

@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import NavBar from './components/NavBar/NavBar';
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       <NavBar /> 
       <ItemListContainer greeting='SI NO ES UN BUEN DÍA ME LO INVENTO LOVELY'/>
-      <ItemCount />
+    
 
           
       <header className="App-header">
