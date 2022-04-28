@@ -1,17 +1,16 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemLIstContainer/ItemListContainer';
-import ItemCount from './components/ItemCount/ItemCount';
+
 
 function App() {
   return (
     <div className="App">
       <NavBar /> 
-      <ItemListContainer greeting='SI NO ES UN BUEN DÍA ME LO INVENTO LOVELY'/>
-    
+      <ItemListContainer greeting='SI NO ES UN BUEN DÍA ME LO INVENTO LOVELY'/> 
+     
+      
 
           
       <header className="App-header">
