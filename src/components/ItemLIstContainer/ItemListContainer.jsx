@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './ItemListContainer.css';
-import ItemList from '../ItemList/ItemList';
-import ItemCount from '../ItemCount/ItemCount';
+// import ItemList from '../ItemList/ItemList';
+// import ItemCount from '../ItemCount/ItemCount';
+import ItemDetailConteiner from '../ItemDetailConteiner/ItemDetailConteiner';
 
 
 function getProducts(){
@@ -51,8 +52,9 @@ function ItemListContainer ({greeting }) {
       <div className="sidebar">
       {greeting}
       </div>
-      <ItemCount stock={12} initial={0}/>
-      <ItemList items={products}/>
+      {/* <ItemCount stock={12} initial={0}/>
+      <ItemList items={products}/> */}
+      <ItemDetailConteiner />
     </>
     
 

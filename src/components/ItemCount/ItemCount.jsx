@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import './ItemCount.css'
 import { Button } from 'react-bootstrap';
+import Swal from 'sweetalert2';
 
 const ItemCount = ({stock, initial}) => {
   const [count, setCount] = useState(initial);
@@ -19,12 +20,13 @@ const ItemCount = ({stock, initial}) => {
   }
   const onAdd = () => {
     const mensaje = `Agregaste ${count} producto`;
-    count === 1 ? alert(mensaje) : alert(`${mensaje}s`);
+    Swal.fire(count===1 ? mensaje : `${mensaje}s`);
+  
   };
 
   
   return (
-    <div className='contenedor-principal d-flex flex-column justify-content-center col-12'>
+    <div className='contenedor-principal justify-content-center'>
       <div className='d-flex justify-content-center flex-row col-12'>
         < Button variant='primary' onClick={onDecrease} className='px-3 mx-3'>
           -
