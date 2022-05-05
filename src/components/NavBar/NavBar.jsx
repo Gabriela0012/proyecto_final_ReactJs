@@ -2,6 +2,8 @@ import React from 'react';
 import './NavBar.css';
 import logo from './../../imagenes/logo.png';
 import CartWidget from '../CartWidget/CartWidget';
+import { NavLink} from 'react-router-dom';
+
 
 function NavBar() {
   return (
@@ -11,19 +13,19 @@ function NavBar() {
         <div>
           <ul className='nav'>
             <li>
-              <a href='#'>INICIO</a>
+              <NavLink to='/'  className={(nav) => nav.isActive ? 'link-active' : ''}>INICIO</NavLink>
             </li>
             <li>
-              <a  href='#'>PRODUCTOS</a>
+              <NavLink  to='/category' className={(nav) => nav.isActive ? 'link-active' : ''}>CATEGORIAS</NavLink>
             </li>
             <li>
-              <a href='#'>INFORMACIÓN PARA COMPRAR</a>
+              <NavLink to='/category/minis' className={(nav) => nav.isActive ? 'link-active' : ''}>MINIS</NavLink>
+            </li> 
+            <li>
+              <NavLink to='/category/shorts' className={(nav) => nav.isActive ? 'link-active' : ''}>SHORTS</NavLink>
             </li>
             <li>
-              <a href='#'>TABLA DE TALLES</a>
-            </li>
-            <li>
-              <a href='#'>CONTACTANOS</a>
+              <NavLink to='/category/jeans' className={(nav) => nav.isActive ? 'link-active' : ''}>JEANS</NavLink>
             </li>
           </ul>
 

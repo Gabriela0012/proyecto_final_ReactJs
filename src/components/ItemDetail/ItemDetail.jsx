@@ -18,7 +18,7 @@ function ItemDetail({item}) {
            <Card.Text>
              {item.price }
             </Card.Text>
-            <ItemCount stock={12} initial={0}/>
+            <ItemCount stock={12} initial={1}/>
           </Card.Body>
         </Card>
 
