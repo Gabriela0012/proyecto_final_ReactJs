@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 
 function Item({item }) {
   return (
-    <Card style={{ width: '20rem'}}>
+    <Card style={{ width: '20rem'}} className='m-3'>
       <Card.Img  variant="top" src={item.image} />
       <Link to={'/item/' + item?.id}>
         <Button variant="outline-info">Ver Detalle</Button>
