@@ -12,14 +12,16 @@ function getProducts(category){
         "id": 1,
         "title": "Mini Negra",
         "category" : "minis",
-        "image" : require('../../imagenes/mini_negra.jpg')
+        "image" : require('../../imagenes/mini_negra.jpg'),
+        "stock": "8"
       },
       {
         "price": '$1500',
         "id": 2,
         "title": "Jeans",
         "category" : "jeans",
-        "image": require('../../imagenes/jeans_bota.jpg')
+        "image": require('../../imagenes/jeans_bota.jpg'),
+        "stock": "8"
     
       },
       {
@@ -27,14 +29,15 @@ function getProducts(category){
         "id": 3,
         "title": "Short Gris",
         "category" : "shorts",
-        "image" : require('../../imagenes/short_gris.jpg')
+        "image" : require('../../imagenes/short_gris.jpg'),
+        "stock": "8"
       
       },
     ];
     const productsFiltered = category ? productsList.filter (p => p.category === category) : productsList;
     setTimeout(() =>{
       resolve(productsFiltered);
-    },2000);
+    },1000);
   });
   return myPromise;
 }

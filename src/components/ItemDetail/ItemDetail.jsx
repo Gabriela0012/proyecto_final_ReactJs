@@ -1,9 +1,19 @@
-import React from 'react';
+import React, {useState } from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 import Card from 'react-bootstrap/Card';
+import { Button } from 'react-bootstrap';
+import {Link } from 'react-router-dom';
+
 
 
 function ItemDetail({item}) {
+  const [cantidadProductos, setCantidadProductos] = useState(null);
+  
+  function addHandler(quantityToAdd) {
+    setCantidadProductos (quantityToAdd);
+    
+  }
+
   return (
     <div className='d-flex row justify-content-end col-12 p-3 m-3'>
       <div className=' col-5'>
@@ -18,7 +28,18 @@ function ItemDetail({item}) {
            <Card.Text>
              {item.price }
             </Card.Text>
-            <ItemCount stock={12} initial={1}/>
+            <div>
+              {cantidadProductos ?
+                
+                <Button variant='primary'>
+                  <Link className='btn btn-primary' to='/cart'> TERMINAR COMPRA ({cantidadProductos }productos)</Link>
+                </Button> :
+                <ItemCount stock={item.stock} initial={0} onAdd={addHandler} />
+                
+              }
+
+            </div>
+            
           </Card.Body>
         </Card>
 
