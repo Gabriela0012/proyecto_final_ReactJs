@@ -9,9 +9,11 @@ import Cart from './pages/Cart/Cart';
 import { Routes, Route } from 'react-router-dom';
 
 
+
 function App() {
   return (
-    <div className="App">    
+    <div className="App"> 
+     
         <NavBar />
         <Routes>
           <Route path='/' element={<Inicio />} />
@@ -21,8 +23,9 @@ function App() {
           <Route path='/item/:id' element={<ItemDetailConteiner />} />
      
         </Routes> 
-        
         <FooterA /> 
+
+
     
     </div>
   );

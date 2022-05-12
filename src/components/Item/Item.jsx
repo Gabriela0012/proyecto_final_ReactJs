@@ -14,10 +14,9 @@ function Item({item }) {
       </Link>
       
       <Card.Body>
-        {/* <Link to={'/category/' + item?.category}>  */}
-        <Card.Title>{item.title }</Card.Title>
-        {/* </Link> */}
 
+        <Card.Title>{item.title }</Card.Title>
+    
        
         <Card.Text>
           {item.price }

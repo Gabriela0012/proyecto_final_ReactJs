@@ -30,9 +30,11 @@ const ItemCount = ({stock, initial, onAdd }) => {
           +
         </Button>
       </div>
-      < Button variant='danger' onClick = {() => (count <=stock) && onAdd(count)} className='mt-3'>
-          Agregar al carrito
+      { count === 0 ? <Button variant='secondary'> Agregar Producto </Button> :
+        < Button variant='danger' onClick = {() => (count <=stock) && onAdd(count)} className='mt-3'>
+          Agregar al Carrito
         </Button>
+      }
     </div>
   );
 
