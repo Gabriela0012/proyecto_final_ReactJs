@@ -6,7 +6,7 @@ const CartContext = createContext({
   removeProduct: () => {},
   clear: () => {},
   isInCart: () => {},
-  getCartQuantity: () => {}
+ 
 
 });
 
@@ -42,11 +42,30 @@ export const CartContextProvider = ({ children }) => {
     return productList.map(p => p.id).indexOf(id) !== -1;
   }
 
-  const getCartQuantity = () => {
+  const totalCount = () => {
     return productList.reduce((total, value) => {
         return total + value.quantity
     }, 0)
   }
+
+  const totalPrice = () => {
+    return productList.reduce(
+      (total, item) => total + item.quantity * item.price,
+      0
+    );
+  };
+
+  const unitsProduct = (id) => {
+    const foundInCart = productList.find((item) => item.id === id);
+    return foundInCart ? foundInCart.quantity : 0;
+  };
+
+  const deleteById = (id) => {
+    setProductList(productList.filter((item) => item.id !== id));
+  };
+
+
+
 
  
 
@@ -58,7 +77,11 @@ export const CartContextProvider = ({ children }) => {
       removeProduct,
       clear,
       isInCart,
-      getCartQuantity,
+      totalCount,
+      totalPrice,
+      unitsProduct,
+      deleteById
+
     
 
     }}>

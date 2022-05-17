@@ -6,7 +6,7 @@ function getItem(id) {
     
     const productsList = [
       {
-        price: '$1700',
+        price: 1700,
         id: 1,
         title: "Mini Negra",
         category : "minis",
@@ -14,7 +14,7 @@ function getItem(id) {
         stock: "8"
       },
       {
-        price: '$1500',
+        price: 1500,
         id: 2,
         title: "Jeans",
         category: "jeans",
@@ -23,7 +23,7 @@ function getItem(id) {
     
       },
       {
-        price: '$1800',
+        price: 1800,
         id: 3,
         title: "Short Gris",
         category : "shorts",
@@ -32,7 +32,7 @@ function getItem(id) {
       
       },
       {
-        price: '$1500',
+        price: 1500,
         id: 4,
         title: "Mini",
         category : "minis",
@@ -41,7 +41,7 @@ function getItem(id) {
       
       },
       {
-        price: '$1500',
+        price: 1500,
         id: 5,
         title: "Mini gris",
         category : "minis",
@@ -50,7 +50,7 @@ function getItem(id) {
       
       },
       {
-        price: '$1800',
+        price: 1800,
         id: 6,
         title: "Short",
         category : "shorts",
@@ -59,7 +59,7 @@ function getItem(id) {
       
       },
       {
-        price: '$1900',
+        price: 1900,
         id: 7,
         title: "Short Blanco",
         category : "shorts",
@@ -68,7 +68,7 @@ function getItem(id) {
       
       },
       {
-        price: '$1800',
+        price: 1800,
         id: 8,
         title : "Short Negro",
         category : "shorts",
@@ -77,7 +77,7 @@ function getItem(id) {
       
       },
       {
-        price: '$1800',
+        price: 1800,
         id: 9,
         title: "Jeans Mom",
         category : "jeans",

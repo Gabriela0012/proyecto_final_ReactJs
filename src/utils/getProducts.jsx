@@ -4,7 +4,7 @@ function getProducts(category){
   const myPromise = new Promise((resolve, reject) =>{
     const productsList = [
       {
-        price: '$1700',
+        price: 1700,
         id: 1,
         title: "Mini Negra",
         category : "minis",
@@ -12,7 +12,7 @@ function getProducts(category){
         stock: "8"
       },
       {
-        price: '$1500',
+        price: 1500,
         id: 2,
         title: "Jeans",
         category: "jeans",
@@ -21,7 +21,7 @@ function getProducts(category){
     
       },
       {
-        price: '$1800',
+        price: 1800,
         id: 3,
         title: "Short Gris",
         category : "shorts",
@@ -30,7 +30,7 @@ function getProducts(category){
       
       },
       {
-        price: '$1500',
+        price: 1500,
         id: 4,
         title: "Mini",
         category : "minis",
@@ -39,7 +39,7 @@ function getProducts(category){
       
       },
       {
-        price: '$1500',
+        price: 1500,
         id: 5,
         title: "Mini gris",
         category : "minis",
@@ -48,7 +48,7 @@ function getProducts(category){
       
       },
       {
-        price: '$1800',
+        price: 1800,
         id: 6,
         title: "Short",
         category : "shorts",
@@ -57,7 +57,7 @@ function getProducts(category){
       
       },
       {
-        price: '$1900',
+        price: 1900,
         id: 7,
         title: "Short Blanco",
         category : "shorts",
@@ -66,7 +66,7 @@ function getProducts(category){
       
       },
       {
-        price: '$1800',
+        price: 1800,
         id: 8,
         title : "Short Negro",
         category : "shorts",
@@ -75,7 +75,7 @@ function getProducts(category){
       
       },
       {
-        price: '$1800',
+        price: 1800,
         id: 9,
         title: "Jeans Mom",
         category : "jeans",

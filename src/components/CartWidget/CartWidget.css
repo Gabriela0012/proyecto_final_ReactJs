@@ -3,3 +3,15 @@
   width: 70px;
   
 }
+.icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(147, 10, 226);
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+}

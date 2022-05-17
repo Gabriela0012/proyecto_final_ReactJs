@@ -32,20 +32,13 @@ function ItemDetail({item}) {
              {item.price }
             </Card.Text>
             <div>
-            <ItemCount initial={0} stock={item.stock} onAdd={addHandler} />
-              <div className='d-flex flex-column col-5 m-2'>
-                
-                <Button variant='info'onClick={() => console.log(cartCtx.products)} >Imprimir carrito</Button>
-                <Button variant='success'onClick={() => cartCtx.removeProduct(item.id)} >Remover producto</Button>
-                <Button variant='secondary'onClick={() => cartCtx.clear()} >Limpiar Carrito</Button>
-                <Button variant='warning'onClick={() => console.log(cartCtx.isInCart(item.id))} >¿Esta en el Carrito?</Button>
-                
-              </div>
-              {cartCtx.products.length &&
-                        <Button variant='primary'>
-                        <Link className='btn btn-primary' to='/cart'> IR A CARRITO({ cartCtx.getCartQuantity() } items)</Link>
-                      </Button> 
-                    }
+              <ItemCount initial={0} stock={item.stock} onAdd={addHandler} />
+            
+              {cartCtx.isInCart (item.id) &&
+                <Button variant='primary'>
+                  <Link className='btn btn-primary' to='/cart'> IR A CARRITO({ cartCtx.totalCount() } items)</Link>
+                </Button> 
+              }
            
 
             </div>
