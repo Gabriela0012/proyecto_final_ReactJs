@@ -2,7 +2,22 @@ import React, { useEffect, useState } from 'react';
 import './ItemListContainer.css';
 import ItemList from '../../components/ItemList/ItemList';
 import {useParams } from 'react-router-dom';
-import getProducts from '../../utils/getProducts';
+import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
+
+
+function getProducts(category){
+  const db = getFirestore();
+    
+    const itemCollection = collection(db, 'items');
+
+    const q = category && query(
+      itemCollection,
+      where('category', '==', category)
+    );
+    
+  return getDocs(q || itemCollection)
+
+}
 
 
 
@@ -12,11 +27,13 @@ function ItemListContainer () {
   const {categoryId } = useParams();
 
   useEffect(() => {
+   
     getProducts(categoryId)
-     .then (res => {
-       setProducts(res);
+     .then (snapshot => {
+       setProducts(snapshot.docs.map(doc => { 
+            return {...doc.data(), id: doc.id}
+          }));;
     })
-    
   },[categoryId]);
   
   return (

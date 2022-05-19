@@ -1,8 +1,6 @@
 import React, {useContext} from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 import Card from 'react-bootstrap/Card';
-import { Button } from 'react-bootstrap';
-import {Link } from 'react-router-dom';
 import CartContext from '../../store/cart-context';
 
 
@@ -34,11 +32,7 @@ function ItemDetail({item}) {
             <div>
               <ItemCount initial={0} stock={item.stock} onAdd={addHandler} />
             
-              {cartCtx.isInCart (item.id) &&
-                <Button variant='primary'>
-                  <Link className='btn btn-primary' to='/cart'> IR A CARRITO({ cartCtx.totalCount() } items)</Link>
-                </Button> 
-              }
+             
            
 
             </div>

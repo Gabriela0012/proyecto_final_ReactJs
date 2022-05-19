@@ -2,12 +2,7 @@ import { createContext, useState } from 'react';
 
 const CartContext = createContext({
   products: [],
-  addProduct: () =>{},
-  removeProduct: () => {},
-  clear: () => {},
-  isInCart: () => {},
- 
-
+  
 });
 
 
@@ -55,11 +50,6 @@ export const CartContextProvider = ({ children }) => {
     );
   };
 
-  const unitsProduct = (id) => {
-    const foundInCart = productList.find((item) => item.id === id);
-    return foundInCart ? foundInCart.quantity : 0;
-  };
-
   const deleteById = (id) => {
     setProductList(productList.filter((item) => item.id !== id));
   };
@@ -79,7 +69,6 @@ export const CartContextProvider = ({ children }) => {
       isInCart,
       totalCount,
       totalPrice,
-      unitsProduct,
       deleteById
 
     
