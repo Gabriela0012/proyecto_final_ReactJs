@@ -1,7 +1,12 @@
 .contenedor-principal {
-  height: 15rem;
+  height: 8rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: white;
+ 
 } 
+h3{
+  font-size: 1.5rem;
+
+}

@@ -2,6 +2,7 @@ import { createContext, useState } from 'react';
 
 const CartContext = createContext({
   products: [],
+  addProduct: () => {},
   
 });
 
@@ -54,6 +55,11 @@ export const CartContextProvider = ({ children }) => {
     setProductList(productList.filter((item) => item.id !== id));
   };
 
+  const unitsProduct = (id) => {
+    const foundInCart = productList.find((item) => item.id === id);
+    return foundInCart ? foundInCart.quantity : 0;
+  };
+
 
 
 
@@ -69,7 +75,8 @@ export const CartContextProvider = ({ children }) => {
       isInCart,
       totalCount,
       totalPrice,
-      deleteById
+      deleteById,
+      unitsProduct
 
     
 

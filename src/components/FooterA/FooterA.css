@@ -1,6 +1,7 @@
 .navegacion{
 
   background-color: #e6d0f0;
+  color: #9b12b6;
 
 }
 .img-redes{
@@ -10,20 +11,4 @@
   margin: 10px;
   border-radius: 0%;
  
-}
-.nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 45px;
-  background-color: #e6d0f0;
-  color: #9b12b6;
-  font-size: 15px;
-  font-family: 'Ranga', cursive;
-  text-decoration: none;
-}
-
-
-.link-active:hover {
-  font-size: 200%;
-  color: #9b12b6;
 }

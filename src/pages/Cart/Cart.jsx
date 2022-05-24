@@ -15,8 +15,11 @@ function Cart() {
       <>
         <div className='cart d-flex-row justify-content-start'>
           <h4>Precio total: ${cartCtx.totalPrice()}</h4>
-          <Button variant='outline-primary'>Terminar compra</Button>
           
+          <Link to='/checkout'>
+           <Button variant='outline-primary'>Terminar compra</Button>
+
+          </Link>
         </div>
         <div>
         <Button variant='outline-primary'onClick={() => cartCtx.clear()}>vaciar carrito</Button>  

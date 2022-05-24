@@ -1,9 +1,9 @@
 
-h4,h2{
+h1,h4,h2{
   align-items: center;
   justify-content: center;
- 
-  color: rgb(161, 46, 228);
+  color: #9b12b6;
+  font-family: 'Ranga', cursive;
   
 
 }

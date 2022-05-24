@@ -1,19 +1,15 @@
 import React, { useEffect, useState} from 'react';
 import ItemDetail from '../../components/ItemDetail/ItemDetail';
 import {useParams } from 'react-router-dom';
-// import getItem from '../../utils/getItem';
-import { doc, getDoc, getDocs, getFirestore, query, where } from 'firebase/firestore'
+import db from '../../services/firebase'
+import { doc, getDoc } from 'firebase/firestore'
 
 function getItem(id){
-  const db = getFirestore();
+
 
   const itemRef = doc(db, 'items', id);
 
   return getDoc(itemRef);
-
-
-
-
 
 }
 

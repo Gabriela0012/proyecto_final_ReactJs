@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import CartContext from '../../store/cart-context';
 import Globe from '../Globe/Globe'
 import Figure from 'react-bootstrap/Figure';
-import Button from 'react-bootstrap/Button';
+import{Link} from 'react-router-dom';
 
 import './CartItem.css'
 
@@ -14,7 +14,9 @@ function CartItem({ item }) {
   return (
     <>
     <div className='cart-item d-flex flex-row justify-content-evenly align-items-center m-3' >
-      <Figure.Image width={80} height={120} src={ item?.image } alt="Imagen del producto"/>
+      <Link to={'/item/' + item?.id}>
+        <Figure.Image width={80} height={120} src={ item?.image } alt="Imagen del producto"/>
+      </Link>
       <div>{ item?.title }</div>
       <div>${item?.price }</div>
     

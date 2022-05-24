@@ -1,0 +1,80 @@
+.sidebar {
+  padding: 10px;
+  background-color: #cc8fe4;
+  -webkit-animation-name: colores;
+          animation-name: colores;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes colores {
+  0% {
+    background-color: #cc8fe4;
+  }
+  10% {
+    background-color: rgba(255, 0, 0, 0.685);
+  }
+  20% {
+    background-color: rgba(255, 166, 0, 0.61);
+  }
+  30% {
+    background-color: rgba(255, 255, 0, 0.651);
+  }
+  40% {
+    background-color: rgba(0, 128, 0, 0.726);
+  }
+  50% {
+    background-color: rgba(0, 0, 255, 0.699);
+  }
+  60% {
+    background-color: rgba(76, 0, 130, 0.651);
+  }
+  70% {
+    background-color: rgba(128, 0, 128, 0.815);
+  }
+  100% {
+    background-color: #cc8fe4;
+  }
+}
+
+@keyframes colores {
+  0% {
+    background-color: #cc8fe4;
+  }
+  10% {
+    background-color: rgba(255, 0, 0, 0.685);
+  }
+  20% {
+    background-color: rgba(255, 166, 0, 0.61);
+  }
+  30% {
+    background-color: rgba(255, 255, 0, 0.651);
+  }
+  40% {
+    background-color: rgba(0, 128, 0, 0.726);
+  }
+  50% {
+    background-color: rgba(0, 0, 255, 0.699);
+  }
+  60% {
+    background-color: rgba(76, 0, 130, 0.651);
+  }
+  70% {
+    background-color: rgba(128, 0, 128, 0.815);
+  }
+  100% {
+    background-color: #cc8fe4;
+  }
+}
+
+.sidebar-frase {
+  font-family: 'Ranga', cursive;
+  font-size: 20px;
+  color: white;
+}

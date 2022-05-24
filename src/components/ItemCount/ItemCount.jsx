@@ -21,19 +21,20 @@ const ItemCount = ({stock, initial, onAdd }) => {
   return (
     <div className='contenedor-principal justify-content-center'>
       <div className='d-flex justify-content-center flex-row col-12'>
-        < Button variant='primary' onClick={() => onDecrease()} className='px-3 mx-3'>
+        < Button variant='outline-primary' onClick={() => onDecrease()} className='px-3 mx-3'>
           -
         </Button>
-        <h1 className='px-3'>{count}</h1>
-        
-        < Button variant='primary' onClick={() => onIncrease()} className='px-3 mx-3'>
+        <h3 className='px-3'>{count}</h3>
+       
+        < Button variant='outline-primary' onClick={() => onIncrease()} className='px-3 mx-3'>
           +
         </Button>
+     
       </div>
       { count === 0 ? <Button variant='secondary'> Agregar Producto </Button> :
-        < Button variant='danger' onClick = {() => (count <=stock) && onAdd(count)} className='mt-3'>
+        < Button variant='outline-danger' onClick = {() => (count <= stock) && onAdd(count)} className='mt-3'>
           Agregar al Carrito
-        </Button>
+        </Button> 
       }
     </div>
   );
