@@ -13,7 +13,7 @@ En las fotos de los productos vas a encontrar un boton para ver el detalle, cada
 En la pagina podra rutear directamente al producto especifico que quieras por ejemplo si\ colocas "/category/shorts"  le mostrara los productos en esta categoria.
 
 ## Como comprar
-![image](https://github.com/Gabriela0012/clase-2-arenas/blob/main/src/imagenes/Lovely-experienciaUsuario.gif)\
+![image](https://github.com/Gabriela0012/clase-2-arenas/blob/main/src/imagenes/Lovely-experienciaUsuario.gif)
 
 
 
