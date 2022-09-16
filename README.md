@@ -1,6 +1,6 @@
 # Lovely
 
-Este proyecto es un tiende virtual de jeans
+Este proyecto es un ecommerce de jeans
 ## Decisiones
 
 Al ejecujarse la aplicacion le muestra el inicio son la foto de dos chicas\
